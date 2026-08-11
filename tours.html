@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>López Tours — Renta de Vans con Chofer en Querétaro</title>
+  <meta name="description" content="Renta de vans con chofer en Corregidora, Querétaro. Vans VW, Mercedes-Benz y Ford para bodas, tours, eventos y traslados grupales. Cotiza hoy.">
+  <meta name="keywords" content="renta de van con chofer querétaro, transporte turístico corregidora, tours querétaro, traslados grupales, renta de vans para eventos">
+  <meta property="og:title" content="López Tours — Renta de Vans con Chofer en Querétaro">
+  <meta property="og:description" content="Vans Volkswagen, Mercedes-Benz y Ford con chofer profesional para bodas, tours, eventos y traslados en Querétaro.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/van-sprinter-playa.jpeg">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23B02A2E'/%3E%3Ctext x='50' y='69' font-family='Arial,sans-serif' font-weight='700' font-size='58' fill='white' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-logo">
+    <div class="ld-drops">
+      <span class="ld-drop"></span>
+      <span class="ld-drop"></span>
+      <span class="ld-drop"></span>
+    </div>
+    <div class="ld-brand">
+      <p class="ld-name">López Tours</p>
+      <p class="ld-tag">Comodidad a tu destino</p>
+    </div>
+  </div>
+  <div class="ld-progress">
+    <div class="ld-track"><div class="ld-fill"></div></div>
+    <p class="ld-note">Cargando</p>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Menú principal">
+  <div class="nav-wrap">
+    <a href="#" class="logo" aria-label="López Tours">
+      <div class="logo-drops">
+        <span class="d-b"></span>
+        <span class="d-g"></span>
+        <span class="d-s"></span>
+      </div>
+      <div class="logo-word">LÓPEZ <em>TOURS</em></div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#flotilla">Flotilla</a></li>
+      <li><a href="#why">Ventajas</a></li>
+      <li><a href="#contact" class="nav-cta">Cotizar Ahora</a></li>
+    </ul>
+    <button class="hamburger" id="ham" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mob" class="mob-menu" role="navigation" aria-label="Menú móvil">
+  <a href="#about">Nosotros</a>
+  <a href="#services">Servicios</a>
+  <a href="#flotilla">Flotilla</a>
+  <a href="#why">Ventajas</a>
+  <a href="#contact">Cotizar Ahora</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" aria-label="Encabezado principal">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-ov" aria-hidden="true"></div>
+  <canvas id="pcanvas" aria-hidden="true"></canvas>
+
+  <div class="hero-body">
+    <div class="wrap">
+      <p class="hero-eyebrow">López Tours · Corregidora, Querétaro</p>
+      <h1 class="hero-h1">
+        <span class="h1-line"><span class="h1-inner">Renta de Vans</span></span>
+        <span class="h1-line"><span class="h1-inner">con Chofer para</span></span>
+        <span class="h1-line h1-accent"><span class="h1-inner"><span class="accent-cycle" id="accentCycle">Tu Grupo</span></span></span>
+      </h1>
+      <p class="hero-p">
+        Vans Volkswagen, Mercedes-Benz y Ford con chofer profesional para bodas, tours, eventos empresariales y traslados. Tú disfrutas el viaje — nosotros ponemos el camino.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">
+          Solicitar Cotización
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#flotilla" class="btn-secondary">Ver Flotilla</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Cifras clave">
+    <div class="wrap">
+      <div class="stats-row">
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="4" data-prefix="+" data-suffix="">+0</span>
+          <span class="stat-lbl">Unidades en flotilla</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="3" data-prefix="" data-suffix="">0</span>
+          <span class="stat-lbl">Marcas de van</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="100" data-prefix="" data-suffix="%">0%</span>
+          <span class="stat-lbl">Choferes profesionales</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">Corregidora</span>
+          <span class="stat-lbl">Base de operaciones</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-deco" aria-hidden="true">
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-beam"></div>
+  </div>
+  <div class="hero-scroll-cue" aria-hidden="true">
+    <svg width="22" height="34" viewBox="0 0 22 34" fill="none">
+      <rect x="1" y="1" width="20" height="32" rx="10" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
+      <circle class="mouse-dot" cx="11" cy="9" r="3" fill="rgba(255,255,255,.55)"/>
+    </svg>
+    <span class="scroll-label">Scroll</span>
+  </div>
+  <div class="hero-badge" aria-hidden="true">
+    <span class="hb-dot"></span>
+    <span class="hb-text">Comodidad a tu destino</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section id="trust" aria-label="Ocasiones que atendemos">
+  <div class="wrap">
+    <div class="trust-row">
+      <p class="trust-label">Ideal para</p>
+      <div class="trust-chips">
+        <span class="trust-chip">Bodas y XV Años</span>
+        <span class="trust-chip">Eventos Empresariales</span>
+        <span class="trust-chip">Tours y Excursiones</span>
+        <span class="trust-chip">Grupos Escolares</span>
+        <span class="trust-chip">Traslados y Aeropuerto</span>
+        <span class="trust-chip">Convenciones</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section bg-white">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-wrap rev from-l">
+        <div class="about-img-main">
+          <img
+            src="imagenes/flotilla-corregidora.jpeg"
+            alt="Flotilla de vans de López Tours estacionada en su base de Corregidora, Querétaro" loading="lazy">
+        </div>
+        <div class="about-accent">
+          <p class="a-num">+4</p>
+          <p class="a-lbl">Vans en flotilla</p>
+        </div>
+      </div>
+      <div class="about-text rev">
+        <p class="eyebrow">Quiénes somos</p>
+        <h2 class="heading">Comodidad y Confianza en Cada Kilómetro</h2>
+        <p>López Tours es un servicio de renta de camionetas de turismo con chofer con base en Corregidora, Querétaro. Contamos con distintas capacidades: unidades de 14, 18 y 20 plazas, listas para llevar a tu grupo a donde lo necesite: desde un evento en la ciudad hasta una escapada a la playa o la sierra.</p>
+        <p>Sabemos que cuando rentas una camioneta no solo buscas asientos disponibles: buscas puntualidad, un chofer que conozca el camino y la tranquilidad de que tu grupo llegará cómodo. Eso es exactamente lo que ofrecemos en cada viaje.</p>
+        <div class="about-stats">
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="4" data-prefix="+" data-suffix=""></p>
+            <p class="a-stat-l">Unidades disponibles</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="3" data-prefix="" data-suffix=""></p>
+            <p class="a-stat-l">Capacidades: 14, 18 y 20 plazas</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="100" data-prefix="" data-suffix="%"></p>
+            <p class="a-stat-l">Choferes profesionales</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n">Qro.</p>
+            <p class="a-stat-l">Sede en Corregidora</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section bg-off">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">Lo que hacemos</p>
+      <h2 class="heading">Renta de Vans con Chofer, Sin Complicaciones</h2>
+      <p class="sub">Un servicio completo pensado para que tú solo te preocupes por disfrutar el viaje.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card rev d1">
+        <span class="svc-num" aria-hidden="true">01</span>
+        <div class="svc-icon ic-blue">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B02A2E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="1" y="3" width="15" height="13" rx="1"/>
+            <path d="M16 8h4l3 5v3h-7V8z"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+        </div>
+        <h3>Van + Chofer Profesional</h3>
+        <p>Tú avisas la hora y el destino; nosotros ponemos la unidad y un chofer que conoce las rutas dentro y fuera de Querétaro.</p>
+        <div class="svc-tags">
+          <span class="tag tag-b">Puntualidad</span>
+          <span class="tag tag-b">Choferes locales</span>
+          <span class="tag tag-b">Por horas o por día</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d2">
+        <span class="svc-num" aria-hidden="true">02</span>
+        <div class="svc-icon ic-green">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A9752C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3>Flotilla para Cada Grupo</h3>
+        <p>Unidades Volkswagen, Mercedes-Benz y Ford para grupos chicos o numerosos, con espacio de sobra para el equipaje.</p>
+        <div class="svc-tags">
+          <span class="tag tag-g">Grupos pequeños</span>
+          <span class="tag tag-g">Grupos grandes</span>
+          <span class="tag tag-g">Equipaje incluido</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d3">
+        <span class="svc-num" aria-hidden="true">03</span>
+        <div class="svc-icon ic-slate">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A4038" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
+            <line x1="8" y1="2" x2="8" y2="18"/>
+            <line x1="16" y1="6" x2="16" y2="22"/>
+          </svg>
+        </div>
+        <h3>Rutas Locales y Foráneas</h3>
+        <p>Movemos a tu grupo dentro de Corregidora y Querétaro, y también en viajes foráneos a la playa, la sierra o el destino que elijan.</p>
+        <div class="svc-tags">
+          <span class="tag">Querétaro</span>
+          <span class="tag">Foráneos</span>
+          <span class="tag">Playa y sierra</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FLOTILLA -->
+<section id="flotilla" class="section bg-white">
+  <div class="wrap">
+    <div class="prod-header">
+      <div>
+        <p class="eyebrow">Nuestra Flotilla</p>
+        <h2 class="heading">Vans Listas para tu Próximo Viaje</h2>
+      </div>
+      <a href="#contact" class="btn-outline rev">Solicitar Cotización</a>
+    </div>
+    <div class="prod-grid">
+
+      <div class="prod-card rev d1">
+        <div class="prod-photo">
+          <img src="imagenes/van-crafter-frontal.jpeg" alt="Volkswagen Crafter de López Tours, van para renta con chofer en Querétaro" loading="lazy">
+        </div>
+        <h3>Volkswagen Crafter</h3>
+        <p>Espaciosa y versátil, ideal para grupos medianos y trayectos urbanos.</p>
+        <span class="prod-pill">Grupos medianos</span>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="prod-photo">
+          <img src="imagenes/van-sprinter-interior.jpeg" alt="Interior de la Mercedes-Benz Sprinter de López Tours con asientos reclinables" loading="lazy">
+        </div>
+        <h3>Mercedes-Benz Sprinter</h3>
+        <p>Nuestra unidad más solicitada para viajes largos: asientos reclinables y máxima comodidad en carretera.</p>
+        <span class="prod-pill">Viajes largos</span>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="prod-photo">
+          <img src="imagenes/van-ford-transit.jpeg" alt="Ford Transit de López Tours, van amplia para grupos grandes" loading="lazy">
+        </div>
+        <h3>Ford Transit</h3>
+        <p>Amplitud y capacidad para grupos grandes, perfecta para eventos y traslados numerosos.</p>
+        <span class="prod-pill">Grupos grandes</span>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="prod-photo">
+          <img src="imagenes/van-cajuela-led.jpeg" alt="Cajuela con iluminación LED de las vans López Tours, espacio para equipaje" loading="lazy">
+        </div>
+        <h3>Espacio para tu Equipaje</h3>
+        <p>Compartimentos amplios con iluminación LED para que las maletas de todo el grupo viajen seguras.</p>
+        <span class="prod-pill">Equipaje amplio</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="section bg-navy">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-img-wrap rev from-r">
+        <div class="why-img-main">
+          <img
+            src="imagenes/van-sprinter-cabana.jpeg"
+            alt="Van Mercedes-Benz Sprinter de López Tours con la leyenda Comodidad a tu destino" loading="lazy">
+        </div>
+        <div class="why-img-badge">
+          <p class="wib-n">100%</p>
+          <p class="wib-l">Comodidad garantizada</p>
+        </div>
+      </div>
+      <div class="why-content rev">
+        <p class="eyebrow eyebrow--white">Por qué elegirnos</p>
+        <h2 class="heading heading--white">La Diferencia López Tours</h2>
+        <p class="sub sub--white">Un servicio pensado para que la logística de tu grupo deje de ser tu problema.</p>
+        <div class="benefit-list">
+          <div class="benefit">
+            <div class="ben-icon ben-icon-b">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F0C368" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Choferes Profesionales</h4>
+              <p>Conocen las rutas dentro y fuera de Querétaro, y priorizan tu seguridad y puntualidad en cada viaje.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5D488" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Cobertura Local y Foránea</h4>
+              <p>Desde traslados en Corregidora hasta escapadas a la playa o la sierra: te llevamos a donde vayas.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-b">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F0C368" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Cotización Clara, Sin Sorpresas</h4>
+              <p>Te armamos una propuesta a la medida de tu grupo, tu ruta y tu presupuesto, sin letras chiquitas.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-w">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Flotilla Variada</h4>
+              <p>Vans Volkswagen, Mercedes-Benz y Ford para grupos chicos o numerosos, siempre con espacio de sobra.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="numbers">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">Cómo funciona</p>
+      <h2 class="heading">Reserva tu Van en 4 Pasos</h2>
+    </div>
+    <div class="numbers-grid">
+      <div class="number-item rev d1">
+        <p class="num-v">01</p>
+        <p class="num-l">Cuéntanos tu plan: fecha, destino y número de personas</p>
+      </div>
+      <div class="number-item rev d2">
+        <p class="num-v">02</p>
+        <p class="num-l">Recibe tu cotización clara, por WhatsApp o correo</p>
+      </div>
+      <div class="number-item rev d3">
+        <p class="num-v">03</p>
+        <p class="num-l">Confirmamos y apartamos tu unidad y chofer</p>
+      </div>
+      <div class="number-item rev d4">
+        <p class="num-v">04</p>
+        <p class="num-l">Viajas cómodo, seguro y a tiempo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria">
+  <div class="wrap">
+    <div class="brands-head rev">
+      <p class="eyebrow eyebrow--white">Nuestra Flotilla</p>
+      <h2 class="heading heading--white">Conócenos por Dentro</h2>
+      <p class="brands-sub">Así son las unidades y los detalles que cuidamos en cada viaje.</p>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <img src="imagenes/van-crafter-trasera.jpeg" alt="Volkswagen Crafter de López Tours, vista trasera" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <img src="imagenes/van-crafter-detalle.jpeg" alt="Detalle de la Volkswagen Crafter de López Tours" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <img src="imagenes/van-ford-interior.jpeg" alt="Interior de la Ford Transit de López Tours" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <img src="imagenes/van-cajuela-general.jpeg" alt="Espacio de carga de las vans de López Tours" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <p class="brands-note rev">Cada unidad, lista para tu próximo viaje</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-off">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="contact-info rev from-l">
+        <p class="eyebrow">Contáctanos</p>
+        <h2 class="heading">Cotiza tu Viaje</h2>
+        <p class="sub" style="margin-bottom:36px">Cuéntanos cuántos son, a dónde van y cuándo — te respondemos con una propuesta clara.</p>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B02A2E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.27z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Teléfono</p>
+            <p class="c-value"><a href="tel:+524423350112">+52 442 335 0112</a></p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B02A2E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Correo</p>
+            <p class="c-value"><a href="mailto:lopezeduardo715@gmail.com">lopezeduardo715@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B02A2E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Ubicación</p>
+            <p class="c-value">Corregidora, Querétaro de Arteaga, México</p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B02A2E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Redes sociales</p>
+            <p class="c-value"><a href="https://www.facebook.com/peztour" target="_blank" rel="noopener noreferrer">Facebook: López Tours</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev">
+        <div class="form-wrap">
+          <h3>Solicitar Cotización</h3>
+          <p class="form-sub">Te respondemos a la brevedad por WhatsApp o correo.</p>
+          <form id="cForm" novalidate>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fn">Nombre completo *</label>
+                <input class="fi" type="text" id="fn" name="nombre" placeholder="Su nombre completo" required autocomplete="name">
+              </div>
+              <div class="fg">
+                <label class="fl" for="fe">Empresa</label>
+                <input class="fi" type="text" id="fe" name="empresa" placeholder="Si aplica" autocomplete="organization">
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="ft">Teléfono *</label>
+                <input class="fi" type="tel" id="ft" name="telefono" placeholder="+52 442 000 0000" required autocomplete="tel">
+              </div>
+              <div class="fg">
+                <label class="fl" for="fem">Correo electrónico</label>
+                <input class="fi" type="email" id="fem" name="email" placeholder="correo@ejemplo.com" autocomplete="email">
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fo">Lugar de salida *</label>
+                <input class="fi" type="text" id="fo" name="salida" placeholder="Ej. Corregidora, Qro." required>
+              </div>
+              <div class="fg">
+                <label class="fl" for="fd">Destino *</label>
+                <input class="fi" type="text" id="fd" name="destino" placeholder="¿A dónde viajan?" required>
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="ffs">Fecha de salida *</label>
+                <input class="fi" type="date" id="ffs" name="fecha_salida" required>
+              </div>
+              <div class="fg">
+                <label class="fl" for="ffr">Fecha de regreso</label>
+                <input class="fi" type="date" id="ffr" name="fecha_regreso">
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fh">Horario (salida y regreso) *</label>
+                <input class="fi" type="text" id="fh" name="horario" placeholder="Ej. Salida 7:00 am, regreso 9:00 pm" required>
+              </div>
+              <div class="fg">
+                <label class="fl" for="fs">Tipo de servicio *</label>
+                <select class="fi" id="fs" name="tipo" required>
+                  <option value="">Seleccione el tipo de servicio</option>
+                  <option value="Boda o XV años">Boda o XV años</option>
+                  <option value="Evento empresarial">Evento empresarial</option>
+                  <option value="Tour o excursión">Tour o excursión</option>
+                  <option value="Traslado (aeropuerto / hotel)">Traslado (aeropuerto / hotel)</option>
+                  <option value="Grupo escolar">Grupo escolar</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fm">Comentarios adicionales</label>
+              <textarea class="fi" id="fm" name="mensaje" rows="3" placeholder="Número de personas, equipaje u otro detalle que debamos saber..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <div class="logo-drops" aria-hidden="true">
+            <span class="d-b"></span>
+            <span class="d-g"></span>
+            <span class="d-s"></span>
+          </div>
+          <div class="logo-word">LÓPEZ <em>TOURS</em></div>
+        </div>
+        <p class="foot-desc">Renta de vans con chofer en Corregidora, Querétaro. Tours, traslados, eventos y viajes grupales con la comodidad de llegar bien.</p>
+      </div>
+      <div>
+        <p class="foot-col-title">Servicios</p>
+        <ul class="foot-links">
+          <li><a href="#services">Van + Chofer Profesional</a></li>
+          <li><a href="#services">Flotilla para Cada Grupo</a></li>
+          <li><a href="#services">Rutas Locales y Foráneas</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Flotilla</p>
+        <ul class="foot-links">
+          <li><a href="#flotilla">Volkswagen Crafter</a></li>
+          <li><a href="#flotilla">Mercedes-Benz Sprinter</a></li>
+          <li><a href="#flotilla">Ford Transit</a></li>
+          <li><a href="#flotilla">Ver flotilla completa</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Contacto</p>
+        <ul class="foot-links">
+          <li><a href="tel:+524423350112">+52 442 335 0112</a></li>
+          <li><a href="mailto:lopezeduardo715@gmail.com">lopezeduardo715@gmail.com</a></li>
+          <li><a href="#contact">Cotizar Viaje</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 <span>López Tours</span>. Todos los derechos reservados.</p>
+      <p>Corregidora, Querétaro de Arteaga</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<div class="wa-float">
+  <span class="wa-tip">Escríbenos por WhatsApp</span>
+  <a href="https://wa.me/524423350112"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="wa-btn"
+     aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+      <path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
