@@ -572,14 +572,6 @@ body.revealed main, body.revealed #nav{ opacity:1; }
 .prod-header .heading{ margin:0; }
 .prod-header .sub{ margin:14px 0 0; }
 
-.menu-group-title{
-  display:flex; align-items:center; gap:16px;
-  font-family:var(--font-display); font-weight:600; font-size:20px;
-  color:var(--cafe); margin:0 0 24px;
-}
-.menu-group-title::after{ content:''; flex:1; height:1px; background:rgba(199,91,41,.22); }
-.menu-group-title--second{ margin-top:52px; }
-
 .svc-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
 .svc-card{
   background:var(--crema); border-radius:var(--radius); padding:34px 28px;
