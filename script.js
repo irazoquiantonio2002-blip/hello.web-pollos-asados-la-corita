@@ -312,7 +312,7 @@
       let text = `Hola, quiero pedir pollo asado 🔥\n\n`;
       text += `*Nombre:* ${nombre}\n`;
       text += `*Teléfono:* ${telefono}\n`;
-      text += `*Sabor:* ${sabor}\n`;
+      text += `*Producto:* ${sabor}\n`;
       text += `*Cantidad:* ${cantidad}\n`;
       text += `*Entrega:* ${entrega}\n`;
       if (direccion) text += `*Dirección/Zona:* ${direccion}\n`;
